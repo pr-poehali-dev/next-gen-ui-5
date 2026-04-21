@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
-  },
-  {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
-  },
-  {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
-  },
-  {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
+    title: "Бешеная скорость",
+    description: "Разгоняйся до предела на ночных трассах. Почувствуй адреналин каждого поворота на 200+ км/ч.",
     icon: "zap",
-    badge: "Умный",
+    badge: "Экшен",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Тюнинг авто",
+    description: "Десятки машин с глубокой кастомизацией — движок, кузов, нитро. Собери своего монстра.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "Гараж",
+  },
+  {
+    title: "Онлайн гонки",
+    description: "Сражайся с реальными игроками со всего мира в реальном времени. Войди в топ-100 рейтинга.",
+    icon: "globe",
+    badge: "PvP",
+  },
+  {
+    title: "Ночные заезды",
+    description: "Неоновые огни большого города, полицейские погони и тайные трассы под покровом ночи.",
+    icon: "brain",
+    badge: "Атмосфера",
+  },
+  {
+    title: "Без Pay-to-Win",
+    description: "Честная система прогрессии. Побеждай скиллом, а не кошельком.",
+    icon: "lock",
+    badge: "Честно",
+  },
+  {
+    title: "Турниры и призы",
+    description: "Еженедельные турниры с наградами. Стань чемпионом сезона и получи эксклюзивный транспорт.",
+    icon: "link",
+    badge: "Ивенты",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Почему Black Rush?</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Гоночный экшен, который не отпускает. Каждая гонка — это новый вызов
           </p>
         </div>
 

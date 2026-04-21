@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
-    content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
-  },
-  {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
+    name: "Антон К.",
+    role: "🏆 Топ-10 мирового рейтинга",
     avatar: "/cybersecurity-expert-man.jpg",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "Лучший мобильный гонщик из всех, что я играл. Управление чёткое, физика реалистичная, а погони с полицией — просто огонь!",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
+    name: "Марина Д.",
+    role: "⭐ 4.9 — App Store отзыв",
     avatar: "/asian-woman-tech-developer.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "Наконец-то игра без жёсткого доната! Прокачиваюсь честно, уже 3-й сезон не могу остановиться. Рекомендую всем!",
+  },
+  {
+    name: "Иван Р.",
+    role: "🎮 Стример, 50k подписчиков",
+    avatar: "/professional-woman-scientist.png",
+    content:
+      "Зрители сходят с ума когда я играю в Black Rush. Каждая гонка — это шоу. Механика дрифта просто шедевральная.",
   },
 ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-24 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
+          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Игроки в восторге</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+            Более 2 млн скачиваний и рейтинг 4.8 ⭐ — игроки говорят сами за себя
           </p>
         </div>
 

@@ -3,7 +3,7 @@ import { useAspect, useTexture } from "@react-three/drei"
 import { useMemo, useRef, useState, useEffect } from "react"
 import * as THREE from "three"
 
-const TEXTUREMAP = { src: "https://i.postimg.cc/XYwvXN8D/img-4.png" }
+const TEXTUREMAP = { src: "https://cdn.poehali.dev/projects/d6bc50ad-6006-4720-ba5a-ac92b67c4d11/files/c6d3b0f1-c8c0-4365-8ed2-9c9ac42bbfcf.jpg" }
 const DEPTHMAP = { src: "https://i.postimg.cc/2SHKQh2q/raw-4.webp" }
 
 extend(THREE as unknown as Record<string, unknown>)
@@ -114,8 +114,8 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "Synapse AI".split(" ")
-  const subtitle = "Нейроинтерфейсы нового поколения."
+  const titleWords = "BLACK RUSH".split(" ")
+  const subtitle = "Гоночный экшен для мобильных. Скорость без правил."
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])
@@ -157,7 +157,7 @@ export const Hero3DWebGL = () => {
                   opacity: index < visibleWords ? undefined : 0,
                 }}
               >
-                {word}
+                {index === 1 ? <span className="text-red-500">{word}</span> : word}
               </div>
             ))}
           </div>
@@ -172,6 +172,27 @@ export const Hero3DWebGL = () => {
           >
             {subtitle}
           </div>
+        </div>
+        <div
+          className="flex flex-col sm:flex-row gap-4 mt-8 pointer-events-auto"
+          style={{
+            opacity: subtitleVisible ? 1 : 0,
+            transition: "opacity 0.8s ease",
+            transitionDelay: `${titleWords.length * 0.13 + 1}s`,
+          }}
+        >
+          <a
+            href="#"
+            className="flex items-center gap-3 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-geist font-semibold transition-colors text-sm normal-case"
+          >
+            <span>📱</span> App Store
+          </a>
+          <a
+            href="#"
+            className="flex items-center gap-3 bg-white/10 hover:bg-white/20 border border-white/30 text-white px-6 py-3 rounded-lg font-geist font-semibold transition-colors text-sm normal-case"
+          >
+            <span>🤖</span> Google Play
+          </a>
         </div>
       </div>
 
